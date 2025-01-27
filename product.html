@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AK Machinery Solutions - Product</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card i {
+            font-size: 40px;
+            color: #007bff;
+        }
+
+        .product-card h5 {
+            margin-top: 15px;
+            font-weight: 700;
+        }
+
+        .product-card p {
+            color: #777;
+        }
+
+        .product-card.featured {
+            background-color: #fef4e8;
+            border-color: #fdb45e;
+        }
+
+        .product-card.featured h5,
+        .product-card.featured i {
+            color: #fdb45e;
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            display: block;
+            margin: 10px auto;
+        }
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: #f9f9f9;
+    }
+
+    .product-card i {
+        font-size: 40px;
+        color: #007bff;
+    }
+
+    .product-card h5 {
+        margin-top: 15px;
+        font-weight: 700;
+    }
+
+    .carousel-item img {
+        max-height: 500px;
+        object-fit: cover;
+    }
+    .modal-body {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .modal img {
+        max-height: 50vh; /* Prevent image from taking up too much space */
+        width: auto; /* Keep image aspect ratio */
+        display: block;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        transition: all 0.3s ease;
+        background-color: #fff;
+    }
+
+    .product-card img {
+        max-height: 150px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .product-card h5 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-body {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+    /* Topbar and Navbar with Transparent Black Background */
+.bg-black-transparent {
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important; /* Keep text white */
+}
+
+.navbar-dark .nav-link:hover {
+    color: #007bff !important; /* Highlight on hover */
+}
+
+.navbar-dark .nav-link.active {
+    color: #007bff !important; /* Active link color */
+}
+</style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+      <!-- Topbar Start -->
+<div class="container-fluid bg-black-transparent d-none d-lg-block">
+    <div class="row align-items-center">
+        <!-- Left Section: Combined Logo -->
+        <div class="col-lg-3 col-md-12 d-flex align-items-center">
+            <div style="display: flex; align-items: center;">
+                <!-- Upper Logo -->
+                <img src="img/logo-atas.png" alt="Logo Atas" style="height: 75px;">
+                <!-- Lower Logo Below -->
+                <img src="img/logo-bawah.png" alt="Logo Bawah" style="height: 50px;">
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-12 text-end">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                <p class="m-0 text-white">Kawasan Perindustrian Ehsan Jaya, Kuala Lumpur</p>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <i class="far fa-envelope-open text-primary me-2"></i>
+                <p class="m-0 text-white">ak_machinerysolutions@yahoo.com</p>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center">
+                <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/share/1DR2CbyBod/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.tiktok.com/@akmachinerysolutions?_t=ZS-8tIOL46XUxu&_r=1"><i class="fab fa-tiktok"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/akmachinerysolutions?igsh=bGR6dXh6YW12a3py"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid nav-bar bg-black-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black p-3 py-lg-0 px-lg-4">
+        <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+            <h1 class="text-primary m-0">AK Machinery Solution</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto">
+                <a href="index.html" class="nav-item nav-link text-white">Home</a>
+                <a href="about.html" class="nav-item nav-link text-white">About Us</a>
+                <a href="portfolio.html" class="nav-item nav-link text-white">Portfolio</a>
+                <a href="certificate.html" class="nav-item nav-link text-white">Certificate</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="product.html" class="dropdown-item active">Product</a>
+                        <a href="team.html" class="dropdown-item">Organizational Chart</a>
+                        <a href="service.html" class="dropdown-item">Service</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                    <i class="fa fa-phone-alt text-primary"></i>
+                </div>
+                <div class="ms-3">
+                    <a href="contact.html" style="text-decoration: none;">
+                        <div class="ms-3">
+                            <p class="mb-1 text-white">Contact Us</p>
+                            <h5 class="m-0 text-secondary">03-62620120</h5>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 py-5">
+        <div class="container">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Product</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Product</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Products Section -->
+    <div class="container py-5">
+        <h2 class="section-title">Our Products</h2>
+        <div class="row gy-4">
+           <!-- Machinery Category -->
+<div class="col-md-4">
+    <div class="product-card" data-bs-toggle="modal" data-bs-target="#machineryModal">
+        <i class="fas fa-blender"></i>
+        <h5>MACHINERY</h5>
+        <p>Products related to maintenance and support tools.</p>
+    </div>
+</div>
+
+            <!-- Machinery Modal -->
+<div class="modal fade" id="machineryModal" tabindex="-1" aria-labelledby="machineryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="machineryModalLabel">Machinery Subcategories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <!-- Meat Preparation Area Horizontal Mixer Machine -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#meatPreparationModal" data-bs-dismiss="modal">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <h5>Meat Preparation Area Horizontal Mixer Machine</h5>
+                        </div>
+                    </div>
+
+                    <!-- Meat Ball Machinery -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#meatballMachineryModal" data-bs-dismiss="modal">
+                            <i class="fas fa-hamburger"></i>
+                            <h5>Meat Ball Machinery</h5>
+                        </div>
+                    </div>
+                    <!-- Nugget Line Machinery -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#nuggetLineMachineryModal" data-bs-dismiss="modal">
+                            <i class="fas fa-fish"></i>
+                            <h5>Nugget Line Machinery</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Meat Peparation Modal -->
+<div class="modal fade" id="meatMachineryModal" tabindex="-1" aria-labelledby="meatMachineryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="meatMachineryModalLabel">Meat Preparation Area</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <!-- Belt 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/meatball.png" alt="Meatball Forming machine" class="img-fluid mb-3">
+                            <h5>MEATBALL FORMING MACHINE
+                                MODEL : AKMS-MFM300
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/cookingtank.jpg" alt="Cooking Tank" class="img-fluid mb-3">
+                            <h5>CONTINUOUS COOKING TANK
+                                MODEL : AKMS-CCT800
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fryermachine.jpg" alt="Fryer Machine" class="img-fluid mb-3">
+                            <h5>CONTINUOUS FRYER MACHINE
+                                MODEL : AKMS-MCFM800
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Meatball Peparation Modal -->
+<div class="modal fade" id="meatballMachineryModal" tabindex="-1" aria-labelledby="meatballMachineryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="meatballMachineryModalLabel">Meatball Machinery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <!-- Belt 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/meatball.png" alt="Meatball Forming machine" class="img-fluid mb-3">
+                            <h5>MEATBALL FORMING MACHINE
+                                MODEL : AKMS-MFM300
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/cookingtank.jpg" alt="Cooking Tank" class="img-fluid mb-3">
+                            <h5>CONTINUOUS COOKING TANK
+                                MODEL : AKMS-CCT800
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fryermachine.jpg" alt="Fryer Machine" class="img-fluid mb-3">
+                            <h5>CONTINUOUS FRYER MACHINE
+                                MODEL : AKMS-MCFM800
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Nugget Line Peparation Modal -->
+<div class="modal fade" id="nuggetLineMachineryModal" tabindex="-1" aria-labelledby="neggetLineMachineryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="nuggetLineMachineryModalLabel">Nugget Line Machinery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <!-- Belt 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/battermixer.jpg" alt="Batter Mixer" class="img-fluid mb-3">
+                            <h5>BATTER MIXER MACHINE
+                                MODEL : AKMS-NBM200
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/applicationmachine.png" alt="Batter Application" class="img-fluid mb-3">
+                            <h5>BATTER APPLICATOR MACHINE
+                                MODEL : AKMS-NBA400
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/breading.png" alt="Breading Machine" class="img-fluid mb-3">
+                            <h5>BREADING MACHINE
+                                MODEL : AKMS-NB400
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/preduster.png" alt="Preduster Machine" class="img-fluid mb-3">
+                            <h5>PREDUSTER MACHINE
+                                MODEL : AKMS-NPM400
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fryermachine2.png" alt="Fryer Machine" class="img-fluid mb-3">
+                            <h5>CONTINUOUS FRYER MACHINE
+                                MODEL : AKMS-ACFM4500
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Conveyors Category -->
+            <div class="col-md-4">
+                <div class="product-card" data-bs-toggle="modal" data-bs-target="#conveyorsModal">
+                    <i class="fas fa-dolly-flatbed"></i>
+                    <h5>CONVEYORS</h5>
+                    <p>State-of-the-art electrical products for all needs.</p>
+                </div>
+            </div>
+           <!-- Conveyors Modal -->
+<div class="modal fade" id="conveyorsModal" tabindex="-1" aria-labelledby="conveyorsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="conveyorsModalLabel">Conveyors Subcategories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <!-- Belt Conveyors -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#beltConveyorsModal" data-bs-dismiss="modal">
+                            <i class="fas fa-bars"></i>
+                            <h5>Belt Conveyor</h5>
+                        </div>
+                    </div>
+                    <!-- Roller Conveyors -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card">
+                            <i class="fas fa-cogs"></i>
+                            <h5>Wire Belt-Conveyor</h5>
+                        </div>
+                    </div>
+                    <!-- Slat Conveyors -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#otherConveyorsModal" data-bs-dismiss="modal">
+                            <i class="fas fa-arrows-alt"></i>
+                            <h5>Other Type of Conveyors</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Belt Conveyors Modal -->
+<div class="modal fade" id="beltConveyorsModal" tabindex="-1" aria-labelledby="beltConveyorsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="beltConveyorsModalLabel">Belt Conveyors</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <!-- Belt 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt1.png" alt="Flat-Flex Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Flat-Flex Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <!-- Belt 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt2.png" alt="Eye-Flex Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Eye-Flex Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <!-- Belt 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt3.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Honeycomb Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt4.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Flat-Flex®XT® Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt5.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>TC-327 ™ Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt6.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Specialty Conveyor Belts</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt7.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Flex-Turn® Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt8.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Cordweave Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt9.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Balanced Spiral Woven</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt10.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Filter Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt11.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Plate Link Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt12.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Self Tracking Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt13.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>CompactGrid™ Conveyor Belt</h5>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt14.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>VersaLink™ Conveyor Belt</h5>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt15.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Flexible Rod Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt16.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Ladder Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt17.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Flat-Spiral  Conveyor Belt</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/belt18.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>Chain Link Conveyor Belt</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Other type of Conveyors Modal -->
+<div class="modal fade" id="otherConveyorsModal" tabindex="-1" aria-labelledby="otherConveyorsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="otherConveyorsModalLabel">Other Type of Convenyors</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <!-- Belt 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/vertical.jpg" alt="Flat-Flex Conveyor Belt" class="img-fluid mb-3">
+                            <h5>VERTICAL CONVEYOR</h5>
+                        </div>
+                    </div>
+                    <!-- Belt 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/steel.jpg" alt="Eye-Flex Conveyor Belt" class="img-fluid mb-3">
+                            <h5>STAINLESS STEEL ROLLER CONVEYOR</h5>
+                        </div>
+                    </div>
+                    <!-- Belt 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/incline.jpg" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>INCLINE CONVEYOR</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/modular.png" alt="Honeycomb Conveyor Belt" class="img-fluid mb-3">
+                            <h5>MODULAR BELT CONVEYOR</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Stainless Steel Fabrications Category -->
+ <div class="col-md-4">
+    <div class="product-card" data-bs-toggle="modal" data-bs-target="#stainlessSteelModal">
+        <i class="fas fa-users-cog"></i>
+        <h5>STAINLESS STEEL FABRICATIONS</h5>
+        <p>High-quality plumbing products for every project.</p>
+    </div>
+</div>
+
+</div>
+</div>
+<!-- StainlessSteel Fabrications Modal -->
+<div class="modal fade" id="stainlessSteelModal" tabindex="-1" aria-labelledby="stainlessSteelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stainlessSteelModalLabel">Stailess Steel Fabrications</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <!-- Belt 1 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/meat.jpg" alt="Meat Container" class="img-fluid mb-3">
+                            <h5>MEAT CONTAINER 200L
+                                MODEL : AKMS-MC200
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 2 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/working.jpg" alt="Sink" class="img-fluid mb-3">
+                            <h5>INDUSTRIAL SINK
+                                MODEL : AKMS-IS400-S/D
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- Belt 3 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/working.jpg" alt="Working Platform" class="img-fluid mb-3">
+                            <h5>WORKING PLATFORM
+                                MODEL : AKMS-WP300
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/grading.jpg" alt="Working Platform" class="img-fluid mb-3">
+                            <h5>GRADING TABLE / WORKING TABLE
+                                MODEL : AKMS-WT900
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Gallery Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Images loaded dynamically -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const galleries = {
+        meatPreparation: ["img/mixermachine.jpg", "img/mixermachine2.jpg", "img/doublepaddle.jpg"],
+        meatBallMachinery: ["img/meatball.png", "img/cookingtank.jpg", "img/fryermachine.jpg"],
+        nuggetLine: ["img/battermixer.jpg", "img/applicationmachine.png", "img/breading.png"],
+        beltConveyors: ["img/belt1.png", "img/belt2.png", "img/belt3.png", "img/belt4.png", "img/belt5.png", "img/belt6.png", "img/belt7.png", "img/belt8.png", "img/belt9.png", "img/belt10.png", "img/belt11.png", "img/belt12.png", "img/belt13.png", "img/belt14.png", "img/belt15.png", "img/belt16.png", "img/belt17.png", "img/belt18.png"],
+        rollerConveyors: ["img/roller1.jpg", "img/roller2.jpg"],
+        slatConveyors: ["img/slat1.jpg", "img/slat2.jpg"],
+        storageTanks: ["img/tank1.jpg", "img/tank2.jpg"],
+        steelTables: ["img/table1.jpg", "img/table2.jpg"],
+        customFabrication: ["img/custom1.jpg", "img/custom2.jpg", "img/custom3.jpg"],
+    };
+
+    function showGallery(category) {
+        const images = galleries[category];
+        const carouselInner = document.querySelector("#galleryCarousel .carousel-inner");
+        carouselInner.innerHTML = ""; // Clear existing images
+
+        images.forEach((path, index) => {
+            const carouselItem = document.createElement("div");
+            carouselItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
+            carouselItem.innerHTML = `<img src="${path}" class="d-block w-100" alt="Image ${index + 1}">`;
+            carouselInner.appendChild(carouselItem);
+        });
+
+        const galleryModal = new bootstrap.Modal(document.getElementById("galleryModal"));
+        galleryModal.show();
+    }
+</script>
+<!-- Product Start -->
+<div class="container-fluid my-5 px-0">
+    <div class="video wow fadeInUp" data-wow-delay="0.1s">
+        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="img/Media1.mp4" data-bs-target="#videoModal">
+            <span></span>
+        </button>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="img/Media1.mp4" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-white mb-4">Wire Belt Conveyors</h1>
+        <h3 class="text-white mb-0">24 Hours 7 Days a Week</h3>
+    </div>
+</div>
+<!-- Product End -->
+
+           
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 215, Jalan 1, Taman Perindustrian Ehsan Jaya, Kepong, Kuala Lumpur, Malaysia, 52100</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>03-62620120</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ak_machinerysolutions@yahoo.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/1DR2CbyBod/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@akmachinerysolutions?_t=ZS-8tIOL46XUxu&_r=1"><i class="fab fa-tiktok"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/akmachinerysolutions?igsh=bGR6dXh6YW12a3py"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Opening Hours</h4>
+                    <h6 class="text-light">Monday - Saturday:</h6>
+                    <p class="mb-4">08.30 AM - 05.30 PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Food Processing Machinery</a>
+                    <a class="btn btn-link" href="">Industrial Machinery & Equipments</a>
+                    <a class="btn btn-link" href="">Stainless Steel Fabrication</a>
+                    <a class="btn btn-link" href="">Electrical Swith Board & Contro Panel</a>
+                    <a class="btn btn-link" href="">Supply SPare Parts & Tools</a>
+                    <a class="btn btn-link" href="">Layout & Plan & Design</a>
+                    <a class="btn btn-link" href="">Consultation</a>
+                    <a class="btn btn-link" href="">After Sales service</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Stay updated with our latest services and offers.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">AK Machinery Solutions</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
