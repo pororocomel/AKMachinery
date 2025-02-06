@@ -585,3 +585,112 @@
 .footer .copyright a {
     color: var(--light);
 }
+
+.portfolio-item {
+    display: none;
+}
+
+.portfolio-item.active {
+    display: block;
+}
+
+.filter-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f4f4f4;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* certificate Section */
+.certificate .certificate-filters {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .certificate .certificate-filters li {
+    cursor: pointer;
+    margin: 10px 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    transition: all 0.3s ease;
+  }
+  
+  .certificate .certificate-filters li:hover,
+  .certificate .certificate-filters li.filter-active {
+    color: #fff;
+    background: #007bff;
+    border-radius: 50px;
+  }
+  
+  .certificate .certificate-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .certificate .certificate-item img {
+    transition: all 0.3s ease;
+  }
+  
+  .certificate .certificate-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .certificate .certificate-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 123, 255, 0.9);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certificate .certificate-item:hover .certificate-info {
+    opacity: 1;
+  }
+  
+  .certificate .certificate-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .certificate .certificate-info p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .certificate .certificate-info .preview-link,
+  .certificate .certificate-info .details-link {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .certificate .certificate-info .preview-link:hover,
+  .certificate .certificate-info .details-link:hover {
+    color: #ffc107;
+  }

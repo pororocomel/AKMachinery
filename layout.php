@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>AK Machinery Solutions - About Us</title>
+<meta charset="utf-8">
+    <title>AK Machinery Solutions - Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -24,16 +24,16 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
     <style>
-        /* Topbar and Navbar with Transparent Black Background */
 .bg-black-transparent {
     background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
 }
@@ -53,6 +53,7 @@
 </head>
 
 <body>
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -61,8 +62,7 @@
     </div>
     <!-- Spinner End -->
 
-
-     <!-- Topbar Start -->
+   <!-- Topbar Start -->
 <div class="container-fluid bg-black-transparent d-none d-lg-block">
     <div class="row align-items-center">
         <!-- Left Section: Combined Logo -->
@@ -93,97 +93,10 @@
 </div>
 <!-- Topbar End -->
 
-<!-- Navbar Start -->
-<div class="container-fluid nav-bar bg-black-transparent">
-    <nav class="navbar navbar-expand-lg navbar-light bg-black p-3 py-lg-0 px-lg-4">
-        <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-            <h1 class="text-primary m-0">AK Machinery Solution</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav me-auto">
-                <a href="index.php
-" class="nav-item nav-link text-white">Home</a>
-                <a href="about.php" class="nav-item nav-link active">About Us</a>
-                <a href="portfolio.html" class="nav-item nav-link text-white">Portfolio</a>
-                <a href="certificate.php" class="nav-item nav-link text-white">Certificate</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="product.html" class="dropdown-item">Product</a>
-                        <a href="team.html" class="dropdown-item">Organizational Chart</a>
-                        <a href="service.html" class="dropdown-item">Service</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
-                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
-                    <i class="fa fa-phone-alt text-primary"></i>
-                </div>
-                <div class="ms-3">
-                    <a href="contact.html" style="text-decoration: none;">
-                        <div class="ms-3">
-                            <p class="mb-1 text-white">Contact Us</p>
-                            <h5 class="m-0 text-secondary">03-62620120</h5>
-                        </div>
-                    </a>    
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-<!-- Navbar End -->
+<?php include('navbar.php'); ?>
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 py-5">
-        <div class="container">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">About Us</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">About Us</h6>
-                    <h1 class="mb-4">We Are Trusted Plumbing Company Since 1990</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Residential & commercial plumbing</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Quality services at affordable prices</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Immediate 24/ 7 emergency services</p>
-                    <div class="bg-primary d-flex align-items-center p-4 mt-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt fa-2x text-primary"></i>
-                        </div>
-                        <div class="ms-3">
-                            <p class="fs-5 fw-medium mb-2 text-white">Emergency 24/7</p>
-                            <h3 class="m-0 text-secondary">+012 345 6789</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-4" style="min-height: 500px;">
-                    <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
-                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+    <!-- Yield section to include content specific to each page -->
+    <?php echo $content; ?>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -206,16 +119,18 @@
                     <p class="mb-4">08.30 AM - 05.30 PM</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Food Processing Machinery</a>
-                    <a class="btn btn-link" href="">Industrial Machinery & Equipments</a>
-                    <a class="btn btn-link" href="">Stainless Steel Fabrication</a>
-                    <a class="btn btn-link" href="">Electrical Swith Board & Contro Panel</a>
-                    <a class="btn btn-link" href="">Supply SPare Parts & Tools</a>
-                    <a class="btn btn-link" href="">Layout & Plan & Design</a>
-                    <a class="btn btn-link" href="">Consultation</a>
-                    <a class="btn btn-link" href="">After Sales service</a>
-                </div>
+                    <h4 class="text-light mb-3">Services</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 5px;">Food Processing Machinery</li>
+                        <li style="margin-bottom: 5px;">Industrial Machinery & Equipment</li>
+                        <li style="margin-bottom: 5px;">Stainless Steel Fabrication</li>
+                        <li style="margin-bottom: 5px;">Electrical Switch Board & Control Panel</li>
+                        <li style="margin-bottom: 5px;">Supply Spare Parts & Tools</li>
+                        <li style="margin-bottom: 5px;">Layout, Plan & Design</li>
+                        <li style="margin-bottom: 5px;">Consultation</li>
+                        <li style="margin-bottom: 5px;">After Sales Service</li>
+                    </ul>
+                </div>                              
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
                     <p>Stay updated with our latest services and offers.</p>
@@ -230,20 +145,17 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">AK Machinery Solutions</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Ak Machinery Solutions</a>, All Right Reserved.
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -254,8 +166,6 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
