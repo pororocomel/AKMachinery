@@ -119,18 +119,16 @@
                     <p class="mb-4">08.30 AM - 05.30 PM</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-3">Services</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="margin-bottom: 5px;">Food Processing Machinery</li>
-                        <li style="margin-bottom: 5px;">Industrial Machinery & Equipment</li>
-                        <li style="margin-bottom: 5px;">Stainless Steel Fabrication</li>
-                        <li style="margin-bottom: 5px;">Electrical Switch Board & Control Panel</li>
-                        <li style="margin-bottom: 5px;">Supply Spare Parts & Tools</li>
-                        <li style="margin-bottom: 5px;">Layout, Plan & Design</li>
-                        <li style="margin-bottom: 5px;">Consultation</li>
-                        <li style="margin-bottom: 5px;">After Sales Service</li>
-                    </ul>
-                </div>                              
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Food Processing Machinery</a>
+                    <a class="btn btn-link" href="">Industrial Machinery & Equipments</a>
+                    <a class="btn btn-link" href="">Stainless Steel Fabrication</a>
+                    <a class="btn btn-link" href="">Electrical Switch Board & Control Panel</a>
+                    <a class="btn btn-link" href="">Spare Parts & Tools Supply</a>
+                    <a class="btn btn-link" href="">Layout Planning & Design</a>
+                    <a class="btn btn-link" href="">Consultation</a>
+                    <a class="btn btn-link" href="">After Sales Service</a>
+                </div>                             
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
                     <p>Stay updated with our latest services and offers.</p>
