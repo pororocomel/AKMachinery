@@ -235,7 +235,7 @@
 " class="nav-item nav-link text-white">Home</a>
                 <a href="about.php" class="nav-item nav-link text-white">About Us</a>
                 <a href="portfolio.html" class="nav-item nav-link text-white">Portfolio</a>
-                <a href="certificate.php" class="nav-item nav-link text-white">Certificate</a>
+                <a href="certificate.html" class="nav-item nav-link text-white">Certificate</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -484,7 +484,7 @@
                     <p>State-of-the-art electrical products for all needs.</p>
                 </div>
             </div>
-         <!-- Conveyors Modal -->
+<!-- Conveyors Modal -->
 <div class="modal fade" id="conveyorsModal" tabindex="-1" aria-labelledby="conveyorsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
@@ -494,37 +494,18 @@
             </div>
             <div class="modal-body">
                 <div class="row text-center">
-                    <!-- Belt Conveyors -->
+                    <!-- Belt Conveyor -->
                     <div class="col-md-6 mb-4">
                         <div class="product-card" data-bs-toggle="modal" data-bs-target="#beltConveyorsModal" data-bs-dismiss="modal">
                             <i class="fas fa-bars"></i>
                             <h5>Belt Conveyor</h5>
                         </div>
                     </div>
-                    <!-- Wire Belt Conveyors -->
+                    <!-- Wire Belt Conveyor -->
                     <div class="col-md-6 mb-4">
-                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#wireBeltConveyorsModal" data-bs-dismiss="modal">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#wireBeltConveyorModal" data-bs-dismiss="modal">
                             <i class="fas fa-cogs"></i>
-                            <h5>Wire Belt-Conveyor</h5>
-                        </div>
-                    </div>
-                    <!-- Wire Belt Conveyor Subcategories -->
-                    <div class="col-md-6 mb-4">
-                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#flatFlexModal" data-bs-dismiss="modal">
-                            <i class="fas fa-grip-lines"></i>
-                            <h5>Flat Flex</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#flexTurnModal" data-bs-dismiss="modal">
-                            <i class="fas fa-sync-alt"></i>
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#fabricationWorksModal" data-bs-dismiss="modal">
-                            <i class="fas fa-tools"></i>
-                            <h5>Fabrication Works</h5>
+                            <h5>Wire Belt Conveyor</h5>
                         </div>
                     </div>
                     <!-- Other Type of Conveyors -->
@@ -540,6 +521,193 @@
     </div>
 </div>
 
+<!-- Wire Belt Conveyor Modal -->
+<div class="modal fade" id="wireBeltConveyorModal" tabindex="-1" aria-labelledby="wireBeltConveyorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="wireBeltConveyorModalLabel">Wire Belt Conveyor</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="returnToConveyors()"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <!-- Flat Flex -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#flatFlexModal" data-bs-dismiss="modal">
+                            <i class="fas fa-grip-lines"></i>
+                            <h5>Flat Flex</h5>
+                        </div>
+                    </div>
+                    <!-- Flex Turn -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#flexTurnModal" data-bs-dismiss="modal">
+                            <i class="fas fa-sync-alt"></i>
+                            <h5>Flex Turn</h5>
+                        </div>
+                    </div>
+                    <!-- Fabrication Works -->
+                    <div class="col-md-6 mb-4">
+                        <div class="product-card" data-bs-toggle="modal" data-bs-target="#fabricationWorksModal" data-bs-dismiss="modal">
+                            <i class="fas fa-tools"></i>
+                            <h5>Fabrication Works</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     
+<!-- Flat Flex Modal -->
+<div class="modal fade" id="flatFlexModal" tabindex="-1" aria-labelledby="flatFlexModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="flatFlexModalLabel">Flat Flex</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flat1.png" alt="Flat-Flex Conveyor Belt" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flat2.jpg" alt="Eye-Flex Conveyor Belt" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Flex Turn Modal -->
+<div class="modal fade" id="flexTurnModal" tabindex="-1" aria-labelledby="flexTurnModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="flexTurnModalLabel">Flex Turn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex1.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex2.png" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex3.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex4.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex5.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex6.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                             <img src="img/flex7.png" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/flex8.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fabrication Works Modal -->
+<div class="modal fade" id="fabricationWorksModal" tabindex="-1" aria-labelledby="fabricationWorksModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fabricationWorksModalLabel">Fabrication Works</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication1.jpg" alt="Fabrication Works" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication2.jpg" alt="Fabrication Works" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication3.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication4.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication5.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication6.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication7.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="img/fabrication8.jpg" alt="Flex Turn" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function returnToConveyors() {
+        // Close the Wire Belt Conveyor modal
+        const wireBeltModal = bootstrap.Modal.getInstance(document.getElementById('wireBeltConveyorModal'));
+        wireBeltModal.hide();
+
+        // Wait for the modal to close, then open the Conveyors modal
+        const conveyorsModal = new bootstrap.Modal(document.getElementById('conveyorsModal'));
+        setTimeout(() => {
+            conveyorsModal.show();
+        }, 300); // Delay to ensure the first modal is completely hidden
+    }
+</script>
 <!-- Belt Conveyors Modal -->
 <div class="modal fade" id="beltConveyorsModal" tabindex="-1" aria-labelledby="beltConveyorsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -667,100 +835,7 @@
     </div>
 </div>
 
-<!-- Flat flex of Conveyors Modal -->
-<div class="modal fade" id="flatFlexModal" tabindex="-1" aria-labelledby="flatFlexModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="flatFlexModalLabel">Flat Flex</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row gy-4">
-                    <!-- Belt 1 -->
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat1.png" alt="Flat-Flex Conveyor Belt" class="img-fluid mb-3">
-                            <h5>Flat Flex</h5>
-                        </div>
-                    </div>
-                    <!-- Belt 2 -->
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat2.jpg" alt="Eye-Flex Conveyor Belt" class="img-fluid mb-3">
-                            <h5>Flat Flex</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Flex-turn of Conveyors Modal -->
-<div class="modal fade" id="flexTurnModal" tabindex="-1" aria-labelledby="flexTurnModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="flexTurnModalLabel">Flex Turn</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row gy-4">
-                    <!-- Belt 1 -->
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flex1.jpg" alt="Flext Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <!-- Belt 2 -->
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flex2.png" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/fle.jpg" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat2.jpg" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat2.jpg" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat2.jpg" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat2.jpg" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product-card">
-                            <img src="img/flat2.jpg" alt="Flex Turn" class="img-fluid mb-3">
-                            <h5>Flex Turn</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Other type of Conveyors Modal -->
 <div class="modal fade" id="otherConveyorsModal" tabindex="-1" aria-labelledby="otherConveyorsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -803,18 +878,13 @@
         </div>
     </div>
 </div>
-
-
- <!-- Stainless Steel Fabrications Category -->
- <div class="col-md-4">
+<!-- Stainless Steel Fabrications Category -->
+<div class="col-md-4">
     <div class="product-card" data-bs-toggle="modal" data-bs-target="#stainlessSteelModal">
         <i class="fas fa-users-cog"></i>
         <h5>STAINLESS STEEL FABRICATIONS</h5>
         <p>High-quality plumbing products for every project.</p>
     </div>
-</div>
-
-</div>
 </div>
 <!-- StainlessSteel Fabrications Modal -->
 <div class="modal fade" id="stainlessSteelModal" tabindex="-1" aria-labelledby="stainlessSteelModalLabel" aria-hidden="true">
@@ -868,63 +938,6 @@
 </div>
 
 
-
-<!-- Gallery Modal -->
-<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Images loaded dynamically -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    const galleries = {
-        meatPreparation: ["img/mixermachine.jpg", "img/mixermachine2.jpg", "img/doublepaddle.jpg"],
-        meatBallMachinery: ["img/meatball.png", "img/cookingtank.jpg", "img/fryermachine.jpg"],
-        nuggetLine: ["img/battermixer.jpg", "img/applicationmachine.png", "img/breading.png"],
-        beltConveyors: ["img/belt1.png", "img/belt2.png", "img/belt3.png", "img/belt4.png", "img/belt5.png", "img/belt6.png", "img/belt7.png", "img/belt8.png", "img/belt9.png", "img/belt10.png", "img/belt11.png", "img/belt12.png", "img/belt13.png", "img/belt14.png", "img/belt15.png", "img/belt16.png", "img/belt17.png", "img/belt18.png"],
-        rollerConveyors: ["img/roller1.jpg", "img/roller2.jpg"],
-        slatConveyors: ["img/slat1.jpg", "img/slat2.jpg"],
-        storageTanks: ["img/tank1.jpg", "img/tank2.jpg"],
-        steelTables: ["img/table1.jpg", "img/table2.jpg"],
-        customFabrication: ["img/custom1.jpg", "img/custom2.jpg", "img/custom3.jpg"],
-    };
-
-    function showGallery(category) {
-        const images = galleries[category];
-        const carouselInner = document.querySelector("#galleryCarousel .carousel-inner");
-        carouselInner.innerHTML = ""; // Clear existing images
-
-        images.forEach((path, index) => {
-            const carouselItem = document.createElement("div");
-            carouselItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
-            carouselItem.innerHTML = `<img src="${path}" class="d-block w-100" alt="Image ${index + 1}">`;
-            carouselInner.appendChild(carouselItem);
-        });
-
-        const galleryModal = new bootstrap.Modal(document.getElementById("galleryModal"));
-        galleryModal.show();
-    }
-</script>
 <!-- Product Start -->
 <div class="container-fluid my-5 px-0">
     <div class="video wow fadeInUp" data-wow-delay="0.1s">
@@ -955,7 +968,7 @@
     </div>
 </div>
 <!-- Product End -->
-
+ 
            
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
