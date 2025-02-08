@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/style.css">
 <div class="container-fluid nav-bar bg-black-transparent">
     <nav class="navbar navbar-expand-lg navbar-light bg-black p-3 py-lg-0 px-lg-4">
         <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
@@ -11,7 +12,7 @@
                 <a href="index.php" class="nav-item nav-link <?php echo ($page == 'home') ? 'active' : ''; ?>">Home</a>
                 <a href="about.php" class="nav-item nav-link <?php echo ($page == 'about') ? 'active' : ''; ?>">About Us</a>
                 <a href="portfolio.html" class="nav-item nav-link <?php echo ($page == 'portfolio') ? 'active' : ''; ?>">Portfolio</a>
-                <a href="certificate.php" class="nav-item nav-link <?php echo ($page == 'certificate') ? 'active' : ''; ?>">Certificate</a>
+                <a href="certificates.html" class="nav-item nav-link <?php echo ($page == 'certificate') ? 'active' : ''; ?>">Certificate</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle <?php echo ($page == 'pages') ? 'active' : ''; ?>" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
